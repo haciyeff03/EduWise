@@ -1,10 +1,11 @@
 import React from "react";
-import { Hero } from "../components";
+import { ChatGptSection, Hero } from "../components";
 
 const Home = () => {
   return (
     <>
-        <Hero />
+      <Hero />
+      <ChatGptSection />
     </>
   );
 };

@@ -21,6 +21,27 @@ body {
     font-family: 'Euclid Circular A', sans-serif;
 }
 
-.bold-text{
+.bold-text {
     font-family: 'Euclid Circular A Bold', sans-serif;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-enter-active {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-exit-active {
+    transition: opacity 400ms;
 }
