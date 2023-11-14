@@ -1,7 +1,8 @@
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import SearchBar from "./SearchBar/SearchBar";
 import Layout from "./Layout/Layout";
 import Hero from "./Hero/Hero";
+import ChatGptSection from "./ChatGptSection/ChatGptSection";
+import TextSlider from "./TextSlider/TextSlider";
 
-export { Header, SearchBar, Footer, Layout,Hero };
+export { Header, Footer, Layout, Hero, ChatGptSection,TextSlider };
