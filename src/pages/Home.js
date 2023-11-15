@@ -1,11 +1,13 @@
 import React from "react";
-import { ChatGptSection, Hero } from "../components";
+import { ChatGptSection, Hero, Professions, RecommendedCourses } from "../components";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <ChatGptSection />
+      <RecommendedCourses />
+      <Professions />
     </>
   );
 };

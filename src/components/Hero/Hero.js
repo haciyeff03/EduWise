@@ -6,7 +6,7 @@ import heroImg from "../../assets/images/glow-financial-transactions-and-risk-ma
 
 const Hero = () => {
   return (
-    <div className="bg-[#E7E0FF] h-[665px] px-[115px] py-[32px] flex">
+    <div className="bg-[#E7E0FF] h-[665px] pr-[112px] pl-[115px] py-[32px] flex">
       <div class="w-full lg:w-1/2">
         <div class="p-4">
           <h1 className="text-[72px]  bold-text">Lorem ipsum ipsum</h1>
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
       <div class="w-full lg:w-1/2">
-        <div className="p-4 ml-28">
+        <div className="flex justify-end ">
           <img src={heroImg} />
         </div>
       </div>
