@@ -1,11 +1,16 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/edu-wise.svg";
 
 const Header = () => {
+  const location = useLocation();
+
   return (
-    <div className="bg-[#E7E0FF] py-[29px] px-[60px]">
-      <header className="bg-white border-b border-white px-[53px] flex justify-between items-center rounded-[16px] w-full mx-auto h-[75px]">
+    <div className={`${location.pathname === "/" ? "bg-[#E7E0FF]" : "bg-white"} py-[29px] px-[60px]`}>
+      <header
+        className={`${location.pathname === "/" ? "bg-white" : "bg-[#E7E0FF]"}  border-b border-white px-[53px] flex justify-between items-center rounded-[16px] w-full mx-auto h-[75px]`}
+      >
         <div className="flex gap-[92px] items-center">
           <Link to="/">
             <img src={logo} />

@@ -1,6 +1,10 @@
 import course2 from "../assets/images/course2.svg";
 import course3 from "../assets/images/course3.svg";
 import course4 from "../assets/images/course4.svg";
+import plans1 from "../assets/images/plans1.svg";
+import plans2 from "../assets/images/plans2.svg";
+import plans3 from "../assets/images/plans3.svg";
+import plans4 from "../assets/images/plans4.svg";
 
 export const courses = [
   {
@@ -97,5 +101,65 @@ export const professions = [
     id: 11,
     img: course2,
     title: "Marketing & Business",
+  },
+];
+
+export const plans = [
+  {
+    id: 0,
+    plan: "Social media marketing",
+    courseCount: 4,
+    img: plans1,
+  },
+  {
+    id: 1,
+    plan: "Front-end development",
+    courseCount: 6,
+    img: plans2,
+  },
+  {
+    id: 2,
+    plan: "Digital product design",
+    courseCount: 5,
+    img: plans3,
+  },
+  {
+    id: 3,
+    plan: "Magistra hazirliq",
+    courseCount: 3,
+    img: plans4,
+  },
+];
+
+export const billing = [
+  {
+    id: 0,
+    plan: "Basic",
+    price: 29,
+    first_descr: "Comprehensive textbook",
+    second_descr: "Comprehensive textbook",
+    third_descr: "Comprehensive textbook",
+    forth_descr: "Comprehensive textbook",
+    duration: "Monthly",
+  },
+  {
+    id: 1,
+    plan: "Standard",
+    price: 59,
+    first_descr: "Comprehensive textbook",
+    second_descr: "Comprehensive textbook",
+    third_descr: "Comprehensive textbook",
+    forth_descr: "Comprehensive textbook",
+    duration: "Quarterly",
+  },
+  {
+    id: 2,
+    plan: "Premium",
+    price: 99,
+    first_descr: "Comprehensive textbook",
+    second_descr: "Comprehensive textbook",
+    third_descr: "Comprehensive textbook",
+    forth_descr: "Comprehensive textbook",
+    duration: "Yearly",
   },
 ];
