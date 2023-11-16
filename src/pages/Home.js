@@ -1,5 +1,5 @@
 import React from "react";
-import { ChatGptSection, Hero, Professions, RecommendedCourses } from "../components";
+import { BestPlans, ChatGptSection, Hero, PlanAndPricing, Professions, RecommendedCourses } from "../components";
 
 const Home = () => {
   return (
@@ -8,6 +8,8 @@ const Home = () => {
       <ChatGptSection />
       <RecommendedCourses />
       <Professions />
+      <BestPlans />
+      <PlanAndPricing />
     </>
   );
 };
