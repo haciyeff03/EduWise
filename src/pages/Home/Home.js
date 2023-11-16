@@ -1,5 +1,5 @@
 import React from "react";
-import { ChatGptSection, Hero, Professions, RecommendedCourses } from "../components";
+import { ChatGptSection, Hero, Professions, RecommendedCourses } from "../../components";
 
 const Home = () => {
   return (
