@@ -57,7 +57,8 @@ body {
     transition: opacity 400ms;
 }
 
-.courses_container {
+.courses_container,
+.plans_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
@@ -69,3 +70,13 @@ body {
     gap: 32px;
 }
 
+.plan_pricing_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+}
+
+.ant-divider-horizontal {
+    margin: 13px 0 !important;
+    border-block-start: 1px solid #D9D9D9 !important;
+}
