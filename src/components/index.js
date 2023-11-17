@@ -8,5 +8,6 @@ import RecommendedCourses from "./RecommendedCourses/RecommendedCourses";
 import Professions from "./Professions/Professions";
 import BestPlans from "./BestPlans/BestPlans";
 import PlanAndPricing from "./PlanAndPricing/PlanAndPricing";
+import CustomerReviews from "./CustomerReviews/CustomerReviews";
 
-export { Header, Footer, Layout, Hero, ChatGptSection, TextSlider, RecommendedCourses, Professions, BestPlans, PlanAndPricing };
+export { Header, Footer, Layout, Hero, ChatGptSection, TextSlider, RecommendedCourses, Professions, BestPlans, PlanAndPricing, CustomerReviews };

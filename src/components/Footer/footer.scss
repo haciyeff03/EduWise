@@ -10,6 +10,9 @@ footer {
 
                 .one {
                     margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
 
                     @media (max-width:1200px) {}
 
@@ -21,7 +24,7 @@ footer {
                         margin-top: 50px;
                     }
 
-                    p {
+                    .logo {
                         margin-left: 40px;
                         color: #FFF;
                         font-size: 24px;
@@ -38,7 +41,8 @@ footer {
                         }
                     }
 
-                    h2 {
+                    .mail{
+                        text-decoration: none;
                         margin-left: 40px;
                         margin-top: -5px;
                         color: #A1A1AA;
