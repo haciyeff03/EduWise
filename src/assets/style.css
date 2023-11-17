@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none !important;
 }
 
 @font-face {
@@ -34,6 +35,10 @@ body {
 
 .bold-text {
     font-family: 'Euclid Circular A Bold', sans-serif;
+}
+
+nav ul {
+    margin-bottom: 0;
 }
 
 .fade-enter {
@@ -66,11 +71,12 @@ body {
 
 .professions_container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
 }
 
-.plan_pricing_container {
+.plan_pricing_container,
+.reviews_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 34px;
@@ -79,4 +85,19 @@ body {
 .ant-divider-horizontal {
     margin: 13px 0 !important;
     border-block-start: 1px solid #D9D9D9 !important;
+}
+
+@media screen and (max-width:1024px) {
+    .hero_buttons{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .hero_buttons button:first-of-type {
+        width: 140px;
+    }
+
+    .hero_buttons button:last-of-type {
+        width: 240px;
+    }
 }

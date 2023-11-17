@@ -12,7 +12,7 @@ const RecommendedCourses = () => {
       <div className="flex items-center justify-between">
         <h1 className="text-[36px] semibold-text">Recommended courses</h1>
         <Link to="" className="flex items-center gap-2">
-          <span>See more</span>
+          <span className="text-black">See more</span>
           <LuArrowRight color="#2C3E50" fontSize={24} />
         </Link>
       </div>
@@ -24,7 +24,7 @@ const RecommendedCourses = () => {
             </Link>
             <div className="pt-[16px] pb-[6px] px-[12px] relative">
               <div className="w-[240px]">
-                <Link to={""}>{course.title}</Link>
+                <Link to={""} className="text-black">{course.title}</Link>
               </div>
               <img src={heart} className="absolute cursor-pointer top-[22px] right-[12px]" />
               <div className="flex items-center gap-[24px] mt-[10px] mb-[25px]">

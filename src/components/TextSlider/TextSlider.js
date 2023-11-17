@@ -63,7 +63,7 @@ const TextSlider = () => {
             </p>
           </CSSTransition>
         </SwitchTransition>
-        <p className="text-[12px]  leading-[23px] self-end text-white absolute bottom-[30px] tracking-[3.84px]">
+        <p className="text-[12px]  leading-[23px] self-end text-white absolute lg:bottom-[30px] bottom-[-41px] tracking-[3.84px]">
           {index + 1}/{data.length}
         </p>
       </div>

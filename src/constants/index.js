@@ -82,26 +82,6 @@ export const professions = [
     img: course2,
     title: "Marketing & Business",
   },
-  {
-    id: 8,
-    img: course2,
-    title: "Marketing & Business",
-  },
-  {
-    id: 9,
-    img: course2,
-    title: "Marketing & Business",
-  },
-  {
-    id: 10,
-    img: course2,
-    title: "Marketing & Business",
-  },
-  {
-    id: 11,
-    img: course2,
-    title: "Marketing & Business",
-  },
 ];
 
 export const plans = [
@@ -137,9 +117,9 @@ export const billing = [
     plan: "Basic",
     price: 29,
     first_descr: "Comprehensive textbook",
-    second_descr: "Comprehensive textbook",
-    third_descr: "Comprehensive textbook",
-    forth_descr: "Comprehensive textbook",
+    second_descr: "Interactive exercise",
+    third_descr: "Unlock all course",
+    forth_descr: "Content articles",
     duration: "Monthly",
   },
   {
@@ -147,9 +127,9 @@ export const billing = [
     plan: "Standard",
     price: 59,
     first_descr: "Comprehensive textbook",
-    second_descr: "Comprehensive textbook",
-    third_descr: "Comprehensive textbook",
-    forth_descr: "Comprehensive textbook",
+    second_descr: "Interactive exercise",
+    third_descr: "Unlock all course",
+    forth_descr: "Content articles",
     duration: "Quarterly",
   },
   {
@@ -157,9 +137,36 @@ export const billing = [
     plan: "Premium",
     price: 99,
     first_descr: "Comprehensive textbook",
-    second_descr: "Comprehensive textbook",
-    third_descr: "Comprehensive textbook",
-    forth_descr: "Comprehensive textbook",
+    second_descr: "Interactive exercise",
+    third_descr: "Unlock all course",
+    forth_descr: "Content articles",
     duration: "Yearly",
+  },
+];
+
+export const reviews = [
+  {
+    id: 0,
+    review:
+      "Eduwise is the best way to practice your speech and met people all around the world, you can expand your vocabulary taking about the subjects settled befothe meetings, it’s a really nice and useful tool!",
+    img: course2,
+    name: "Julio",
+    country: "Brasil",
+  },
+  {
+    id: 1,
+    review:
+      "Eduwise is the best way to practice your speech and met people all around the world, you can expand your vocabulary taking about the subjects settled befothe meetings, it’s a really nice and useful tool!",
+    img: course2,
+    name: "Julio",
+    country: "Brasil",
+  },
+  {
+    id: 2,
+    review:
+      "Eduwise is the best way to practice your speech and met people all around the world, you can expand your vocabulary taking about the subjects settled befothe meetings, it’s a really nice and useful tool!",
+    img: course2,
+    name: "Julio",
+    country: "Brasil",
   },
 ];

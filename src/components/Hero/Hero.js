@@ -6,11 +6,11 @@ import heroImg from "../../assets/images/glow-financial-transactions-and-risk-ma
 
 const Hero = () => {
   return (
-    <div className="bg-[#E7E0FF] h-[665px] pr-[112px] pl-[115px] py-[32px] flex">
-      <div class="w-full lg:w-1/2">
-        <div class="p-4">
-          <h1 className="text-[72px]  bold-text">Lorem ipsum ipsum</h1>
-          <div className="flex  flex-col mt-[24px] gap-2">
+    <div className="bg-[#E7E0FF] px-[40px] lg:pr-[112px] lg:pl-[115px] py-[32px] flex lg:flex-row flex-col">
+      <div class="w-full  lg:w-1/2 lg:mb-[100px]">
+        <div class="p-4 flex flex-col sm:items-center lg:items-start">
+          <h1 className="md:text-[46px] text-[36px] bold-text lg:text-[72px] lg:!text-start !text-center">Lorem ipsum ipsum</h1>
+          <div className="lg:flex hidden  flex-col mt-[24px] gap-2">
             <div className="flex gap-2">
               <img src={messages} />
               <span>conversation</span>
@@ -24,16 +24,14 @@ const Hero = () => {
               <span>conversation</span>
             </div>
           </div>
-          <div className="flex mt-10 gap-7">
-            <button className="rounded-[2px] px-[16px] py-[8px] bg-white">View courses</button>
-            <button className="rounded-[2px] px-[16px] py-[8px] bg-white">Create your free account</button>
+          <div className="flex mt-10 gap-7 lg:flex-row flex-col hero_buttons">
+            <button className="rounded-[2px] px-[16px] py-[8px]  bg-white">View courses</button>
+            <button className="rounded-[2px] px-[16px] py-[8px]  bg-white">Create your free account</button>
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-1/2">
-        <div className="flex justify-end ">
-          <img src={heroImg} />
-        </div>
+      <div class="w-full lg:w-1/2 flex lg:justify-end justify-center ">
+          <img className="lg:w-[459px] md:w-[270px] w-[220px]" src={heroImg} />
       </div>
     </div>
   );

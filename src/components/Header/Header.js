@@ -40,7 +40,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <button className="bg-[#E4E4E7] rounded-[2px] px-[16px] py-[8px]">Daxil ol</button>
+        <button className="bg-[#564FFD] text-white rounded-[2px] px-[16px] py-[8px]">Daxil ol</button>
       </header>
     </div>
   );
