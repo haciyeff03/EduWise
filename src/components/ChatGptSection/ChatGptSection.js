@@ -9,7 +9,7 @@ const ChatGptSection = () => {
         <TextSlider />
       </div>
       <div class="w-full lg:w-1/3">
-        <div className="flex justify-center px-[48px] py-[30px] bg-[#E7E0FF] rounded-[24px]">
+        <div className="flex justify-center p-[80px] bg-[#E7E0FF] rounded-[24px]">
           <img src={man} className="lg:w-100 w-[215px]" />
         </div>
       </div>

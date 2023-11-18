@@ -7,7 +7,8 @@ import TextSlider from "./TextSlider/TextSlider";
 import RecommendedCourses from "./RecommendedCourses/RecommendedCourses";
 import Professions from "./Professions/Professions";
 import BestPlans from "./BestPlans/BestPlans";
-import PlanAndPricing from "./PlanAndPricing/PlanAndPricing";
 import CustomerReviews from "./CustomerReviews/CustomerReviews";
+import MobileNavbar from "./MobileNavbar/MobileNavbar";
+import Navbar from "./Navbar/Navbar";
 
-export { Header, Footer, Layout, Hero, ChatGptSection, TextSlider, RecommendedCourses, Professions, BestPlans, PlanAndPricing, CustomerReviews };
+export { Header, Footer, Layout, Hero, ChatGptSection, TextSlider, RecommendedCourses, Professions, BestPlans, CustomerReviews, MobileNavbar, Navbar };
