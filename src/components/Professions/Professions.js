@@ -5,9 +5,9 @@ import { LuArrowRight } from "react-icons/lu";
 
 const Professions = () => {
   return (
-    <div className="pr-[112px] pl-[115px] py-[100px] bg-[#F4F4F5]">
+    <div className="lg:pr-[112px] lg:pl-[115px] px-[30px] py-[100px] bg-[#F4F4F5]">
       <div className="flex items-center justify-between">
-        <h1 className="text-[36px] semibold-text">Professions</h1>
+        <h1 className="lg:text-[36px] md:text-[29px] text-[27px] semibold-text">Professions</h1>
         <Link to="" className="flex items-center gap-2">
           <span className="text-black">See more</span>
           <LuArrowRight color="#2C3E50" fontSize={24} />

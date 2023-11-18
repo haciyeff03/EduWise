@@ -1,48 +1,28 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import Navbar from "../Navbar/Navbar";
+import MobileNavbar from "../MobileNavbar/MobileNavbar";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/edu-wise.svg";
 
 const Header = () => {
-  const location = useLocation();
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className={`${location.pathname === "/" ? "bg-[#E7E0FF]" : "bg-white"} py-[29px] px-[60px]`}>
-      <header
-        className={`${location.pathname === "/" ? "bg-white" : "bg-[#E7E0FF]"}  border-b border-white px-[53px] flex justify-between items-center rounded-[16px] w-full mx-auto h-[75px]`}
-      >
-        <div className="flex gap-[92px] items-center">
-          <Link to="/">
+    <>
+      <Navbar />
+      <div className="lg:hidden flex items-center justify-between rounded-[16px] px-[32px] py-3 bg-white w-[90%] transform translate-x-[6%] h-[75px] fixed top-[29px] z-50">
+        <div className="w-100 flex justify-between items-center">
+          <Link href="/">
             <img src={logo} />
           </Link>
-          <nav>
-            <ul className="flex gap-[48px]">
-              <li>
-                <Link to="/courses" className="text-black">
-                  Courses
-                </Link>
-              </li>
-              <li>
-                <Link to="/professions" className="text-black">
-                  Professions
-                </Link>
-              </li>
-              <li>
-                <Link to="/plans" className="text-black">
-                  Plans
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-black">
-                  Chat GPT
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <button type="button" onClick={() => setOpen((prevOpen) => !prevOpen)}>
+            <RxHamburgerMenu fontSize={30} />
+          </button>
         </div>
-        <button className="bg-[#564FFD] text-white rounded-[2px] px-[16px] py-[8px]">Daxil ol</button>
-      </header>
-    </div>
+      </div>
+      <MobileNavbar open={open} setOpen={setOpen} />
+    </>
   );
 };
 

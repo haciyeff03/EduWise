@@ -63,17 +63,13 @@ nav ul {
 }
 
 .courses_container,
-.plans_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-}
-
+.plans_container,
 .professions_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
 }
+
 
 .plan_pricing_container,
 .reviews_container {
@@ -88,11 +84,12 @@ nav ul {
 }
 
 @media screen and (max-width:1024px) {
-    .hero_buttons{
+    .hero_buttons {
         justify-content: center;
         align-items: center;
-        
+
     }
+
     .hero_buttons button:first-of-type {
         width: 140px;
     }
@@ -100,4 +97,39 @@ nav ul {
     .hero_buttons button:last-of-type {
         width: 240px;
     }
+}
+
+@media (max-width: 1420px) {
+
+    .courses_container,
+    .plans_container,
+    .professions_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .plan_pricing_container,
+    .reviews_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .courses_container,
+    .plans_container,
+    .professions_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 645px) {
+
+    .courses_container,
+    .plans_container,
+    .professions_container,
+    .plan_pricing_container,
+    .reviews_container {
+        grid-template-columns: 1fr;
+    }
+
 }

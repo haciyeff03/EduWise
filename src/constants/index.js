@@ -111,38 +111,6 @@ export const plans = [
   },
 ];
 
-export const billing = [
-  {
-    id: 0,
-    plan: "Basic",
-    price: 29,
-    first_descr: "Comprehensive textbook",
-    second_descr: "Interactive exercise",
-    third_descr: "Unlock all course",
-    forth_descr: "Content articles",
-    duration: "Monthly",
-  },
-  {
-    id: 1,
-    plan: "Standard",
-    price: 59,
-    first_descr: "Comprehensive textbook",
-    second_descr: "Interactive exercise",
-    third_descr: "Unlock all course",
-    forth_descr: "Content articles",
-    duration: "Quarterly",
-  },
-  {
-    id: 2,
-    plan: "Premium",
-    price: 99,
-    first_descr: "Comprehensive textbook",
-    second_descr: "Interactive exercise",
-    third_descr: "Unlock all course",
-    forth_descr: "Content articles",
-    duration: "Yearly",
-  },
-];
 
 export const reviews = [
   {
