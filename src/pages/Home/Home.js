@@ -5,15 +5,17 @@ import Hero from "../../components/Hero/Hero";
 import Professions from "../../components/Professions/Professions";
 import RecommendedCourses from "../../components/RecommendedCourses/RecommendedCourses";
 import CustomerReviews from "../../components/CustomerReviews/CustomerReviews";
+import ImgAndBtn from "../../components/ImgAndBtn/ImgAndBtn";
 const Home = () => {
   return (
     <>
       <Hero />
       <ChatGptSection />
       <RecommendedCourses />
-      <Professions />
-      <BestPlans />
+      {/* <Professions /> */}
+      {/* <BestPlans /> */}
       <CustomerReviews />
+      <ImgAndBtn />
     </>
   );
 };

@@ -86,9 +86,9 @@ const Footer = () => {
             </div>
             <div className="row second">
               <div className="col-lg-6 left">
-                <Link className="text-[#A1A1AA]" to={""}>Privacy Policy</Link>
-                <Link className="text-[#A1A1AA]" to={""}>Terms of Service</Link>
-                <Link className="text-[#A1A1AA]" to={""}>Cookie Policy</Link>
+                <Link to={""}>Privacy Policy</Link>
+                <Link to={""}>Terms of Service</Link>
+                <Link to={""}>Cookie Policy</Link>
               </div>
               <div className="col-lg-6 right">
                 <span>{new Date().getFullYear()} Eduwise. All rights reserved.</span>
