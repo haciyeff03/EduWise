@@ -39,7 +39,7 @@ const TextSlider = () => {
   };
 
   return (
-    <div className="flex gap-[89px] items-center justify-center relative">
+    <div className="flex lg:gap-[89px] gap-[30px] items-center justify-center relative">
       <div className="flex gap-2 flex-col">
         <button className="rounded-full w-[24px] h-[24px] text-center flex justify-center items-center bg-white" onClick={handlePrevious}>
           <GoChevronUp color="#2C3E50" />
@@ -48,7 +48,7 @@ const TextSlider = () => {
           <GoChevronDown color="#2C3E50" />
         </button>
       </div>
-      <div className="flex flex-col gap-[24px] w-[53%]">
+      <div className="flex flex-col gap-[24px] w-[100%]">
         <SwitchTransition mode="out-in">
           <CSSTransition key={index} nodeRef={nodeRefHeader} classNames="fade" timeout={500}>
             <h2 ref={nodeRefHeader} className="text-white">
@@ -63,7 +63,7 @@ const TextSlider = () => {
             </p>
           </CSSTransition>
         </SwitchTransition>
-        <p className="text-[12px]  leading-[23px] self-end text-white absolute  bottom-[-41px] tracking-[3.84px]">
+        <p className="text-[12px]  leading-[23px] self-end text-white absolute  lg:bottom-[-41px] bottom-[-30px] tracking-[3.84px]">
           {index + 1}/{data.length}
         </p>
       </div>
