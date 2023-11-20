@@ -281,7 +281,6 @@ nav ul {
 
 @media (max-width: 645px) {
 
-    .categories_container,
     .plan_pricing_container,
     .reviews_container {
         grid-template-columns: 1fr;

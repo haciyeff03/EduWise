@@ -43,10 +43,10 @@ const BestPlans = () => {
   return (
     <div className="lg:pr-[112px] lg:pl-[115px] px-[30px] my-[100px] ">
       <div className="flex items-center justify-between">
-        <h1 className="lg:text-[36px] md:text-[29px] text-[27px] semibold-text">Best plans</h1>
+        <h1 className="lg:text-[36px] md:text-[29px] text-[20px] semibold-text">Best plans</h1>
         <Link to="" className="flex items-center gap-2">
-          <span className="text-black">See more</span>
-          <LuArrowRight color="#2C3E50" fontSize={24} />
+          <span className="text-black lg:normal-case uppercase lg:text-[16px] text-[10px]">See more</span>
+          <LuArrowRight color="#2C3E50" className="lg:block hidden" fontSize={24} />
         </Link>
       </div>
       <div className="mt-[60px] mb-[92px]">

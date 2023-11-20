@@ -38,7 +38,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/categories" className={`${location.pathname === "/professions" ? " border-b-[2px]  border-[#5627FF] !text-[#5627FF]" : "text-black h_underline"}  `}>
+              <Link to="/categories" className={`${location.pathname === "/categories" ? " border-b-[2px]  border-[#5627FF] !text-[#5627FF]" : "text-black h_underline"}  `}>
                 Categories
               </Link>
             </li>

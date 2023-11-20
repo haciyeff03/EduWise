@@ -48,10 +48,10 @@ const RecommendedCourses = () => {
   return (
     <div className="lg:pr-[112px] lg:pl-[115px] px-[30px] py-[62px] bg-[#F4F4F5]">
       <div className="flex items-center justify-between">
-        <h1 className="lg:text-[36px] md:text-[29px] text-[27px] semibold-text">Recommended courses</h1>
+        <h1 className="lg:text-[36px] md:text-[29px] text-[20px] semibold-text">Recommended courses</h1>
         <Link to="" className="flex items-center gap-2">
-          <span className="text-black">See more</span>
-          <LuArrowRight color="#2C3E50" fontSize={24} />
+          <span className="text-black lg:normal-case uppercase lg:text-[16px] text-[10px]">See more</span>
+          <LuArrowRight color="#2C3E50" className="lg:block hidden" fontSize={24} />
         </Link>
       </div>
       <div className="courses_container mt-[62px]">
