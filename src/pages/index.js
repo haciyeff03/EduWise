@@ -3,6 +3,7 @@ import Register from "./Register/Register";
 import Home from "./Home/Home";
 import Courses from "./Courses/Courses";
 import Plans from "./Plans/Plans";
-import Professions from "./Professions/Professions";
+import Categories from "./Categories/Categories";
 
-export { Login, Register, Home, Courses, Plans, Professions };
+export { Login, Register, Home, Courses, Plans, Categories };
+

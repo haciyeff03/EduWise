@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <Navbar />
-      <div className="lg:hidden flex items-center justify-between rounded-[16px] px-[32px] py-3 bg-white w-[90%] transform translate-x-[6%] h-[75px] fixed top-[29px] z-50">
+      <div className="lg:hidden flex items-center justify-between px-[32px] py-3 bg-white w-[100%] h-[75px] fixed top-0 z-50">
         <div className="w-100 flex justify-between items-center">
           <Link href="/">
             <img src={logo} />

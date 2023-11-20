@@ -9,20 +9,16 @@ const TextSlider = () => {
       body: "Lorem ipsum dolor sit amet consectetur. Egestas urna tellus ut morbi tincidunt adipiscing in. Urna ultrices purus sed in placerat ullamcorper. Viverra mauris ut aliquam id consequat pharetra odio dis. Ac diam risus ultricies gravida sed et habitant elit.",
     },
     {
-      header: "Chat GPT 2",
-      body: "Lorem ipsum dolor sit amet consectetur. Egestas urna tellus ut morbi tincidunt adipiscing in. Urna ultrices purus sed in placerat ullamcorper. Viverra mauris ut aliquam id consequat pharetra odio dis. Ac diam risus ultricies gravida sed et habitant elit.",
+      header: "Video Courses",
+      body: "Engaging and informative video lessons that provide in-depth knowledge and skills development in  a variety of subjects.",
     },
     {
-      header: "Chat GPT 3",
-      body: "Lorem ipsum dolor sit amet consectetur. Egestas urna tellus ut morbi tincidunt adipiscing in. Urna ultrices purus sed in placerat ullamcorper. Viverra mauris ut aliquam id consequat pharetra odio dis. Ac diam risus ultricies gravida sed et habitant elit.",
+      header: "Roadmap",
+      body: "Personalized learning plans that guide students through their educational  journey, helping them achieve their career or personal goals.",
     },
     {
-      header: "Chat GPT 4",
-      body: "Lorem ipsum dolor sit amet consectetur. Egestas urna tellus ut morbi tincidunt adipiscing in. Urna ultrices purus sed in placerat ullamcorper. Viverra mauris ut aliquam id consequat pharetra odio dis. Ac diam risus ultricies gravida sed et habitant elit.",
-    },
-    {
-      header: "Chat GPT 5",
-      body: "Lorem ipsum dolor sit amet consectetur. Egestas urna tellus ut morbi tincidunt adipiscing in. Urna ultrices purus sed in placerat ullamcorper. Viverra mauris ut aliquam id consequat pharetra odio dis. Ac diam risus ultricies gravida sed et habitant elit.",
+      header: "Mentorship",
+      body: "One-on-one guidance and support fromexperienced professionals who provide personalized advice,feedback, and encouragement to help students succeed in their learning journey.",
     },
   ];
 

@@ -43,8 +43,8 @@ const MobileNavbar = ({ open, setOpen }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/professions" onClick={closeMenu} className="text-black">
-                      Professions
+                    <Link to="/categories" onClick={closeMenu} className="text-black">
+                      Categories
                     </Link>
                   </li>
                   <li>
@@ -54,7 +54,7 @@ const MobileNavbar = ({ open, setOpen }) => {
                   </li>
                   <li>
                     <Link to="#" onClick={closeMenu} className="text-black">
-                      Chat GPT
+                      Edu AI
                     </Link>
                   </li>
                 </ul>

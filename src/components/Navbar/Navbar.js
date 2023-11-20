@@ -33,23 +33,23 @@ const Navbar = () => {
         <nav>
           <ul className="flex gap-[48px] pl-0">
             <li>
-              <Link to="/courses" className="text-black">
+              <Link to="/courses" className={`${location.pathname === "/courses" ? "border-b-[2px]  border-[#5627FF] !text-[#5627FF]" : "text-black h_underline"}  `}>
                 Courses
               </Link>
             </li>
             <li>
-              <Link to="/professions" className="text-black">
-                Professions
+              <Link to="/categories" className={`${location.pathname === "/professions" ? " border-b-[2px]  border-[#5627FF] !text-[#5627FF]" : "text-black h_underline"}  `}>
+                Categories
               </Link>
             </li>
             <li>
-              <Link to="/plans" className="text-black">
+              <Link to="/plans" className={`${location.pathname === "/plans" ? " border-b-[2px]  border-[#5627FF] !text-[#5627FF]" : "text-black h_underline"}  `}>
                 Plans
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-black">
-                Chat GPT
+              <Link to="/eduai" className={`${location.pathname === "/eduai" ? " border-b-[2px]  border-[#5627FF] !text-[#5627FF]" : "text-black h_underline"}  `}>
+                Edu AI
               </Link>
             </li>
           </ul>

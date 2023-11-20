@@ -59,17 +59,24 @@ nav ul {
     transition: opacity 400ms;
 }
 
-.courses_container,
-.plans_container,
-.professions_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+
+.slick-list {
+    margin: 0 -6px;
 }
 
 
+.slick-slide>div {
+    padding: 0 6px;
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
 .plan_pricing_container,
-.reviews_container {
+.reviews_container,
+.categories_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 34px;
@@ -134,6 +141,104 @@ nav ul {
     outline: 0;
 }
 
+.h_underline {
+    position: relative;
+}
+
+.h_underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5627FF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.h_underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.h_underline:hover {
+    color: #5627FF !important;
+}
+
+.active_underline {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5627FF;
+}
+
+.content_ .content-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+.content_:hover .content-overlay {
+    opacity: 1;
+}
+
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content_:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.animated_btn {
+    border-radius: 4px;
+    font-size: 24px;
+    border: 1px solid black;
+    padding: 14px 40px;
+    box-shadow: inset 0 0 0 0 rgba(86, 39, 255, 1);
+    transition: ease-out 0.8s;
+}
+
+.animated_btn:hover {
+    box-shadow: inset 400px 0 0 0 rgba(86, 39, 255, 1);
+    color: white;
+}
+
+.btn_bg {
+    background: linear-gradient(285deg, #FF1C7C 0%, rgba(255, 0, 61.20, 0.94) 100%)
+}
+
+
 @media screen and (max-width:1024px) {
     .hero_buttons {
         justify-content: center;
@@ -149,15 +254,14 @@ nav ul {
         width: 240px;
     }
 
-    .fm_center{
+    .fm_center {
         text-align: center;
     }
 }
 
 @media (max-width: 1420px) {
 
-    .courses_container,
-    .plans_container,
+
     .professions_container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -170,18 +274,14 @@ nav ul {
 
 @media (max-width: 1024px) {
 
-    .courses_container,
-    .plans_container,
-    .professions_container {
+    .categories_container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 645px) {
 
-    .courses_container,
-    .plans_container,
-    .professions_container,
+    .categories_container,
     .plan_pricing_container,
     .reviews_container {
         grid-template-columns: 1fr;

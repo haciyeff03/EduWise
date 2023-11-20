@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./components";
-import { Courses, Home, Login, Plans, Professions, Register } from "./pages";
+import { Courses, Home, Login, Plans, Categories, Register } from "./pages";
 
 function App() {
   const isLoggedIn = true;
@@ -12,7 +12,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/plans" element={<Plans />} />
-            <Route path="/professions" element={<Professions />} />
+            <Route path="/categories" element={<Categories />} />
           </Routes>
         </Layout>
       ) : (
