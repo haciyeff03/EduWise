@@ -6,7 +6,12 @@ import plans1 from "../assets/images/plans1.svg";
 import plans2 from "../assets/images/plans2.svg";
 import plans3 from "../assets/images/plans3.svg";
 import plans4 from "../assets/images/plans4.svg";
-import ctgry1 from "../assets/images/ctgry1.svg";
+import category1 from "../assets/images/category1.svg";
+import category2 from "../assets/images/category2.svg";
+import category3 from "../assets/images/category3.svg";
+import category4 from "../assets/images/category4.svg";
+import category5 from "../assets/images/category5.svg";
+import category6 from "../assets/images/category6.svg";
 
 export const courses = [
   {
@@ -62,42 +67,42 @@ export const courses = [
 export const categories = [
   {
     id: 0,
-    img: ctgry1,
+    img: category1,
     title: "Digital Product",
   },
   {
     id: 1,
-    img: course3,
+    img: category2,
     title: "Software Development",
   },
   {
     id: 2,
-    img: course4,
+    img: category3,
     title: "Digital Marketing",
   },
   {
     id: 3,
-    img: course2,
+    img: category4,
     title: "IOS Development",
   },
   {
     id: 4,
-    img: course2,
+    img: category5,
     title: "Data Analytics",
   },
   {
     id: 5,
-    img: course2,
+    img: category6,
     title: "Flutter Development",
   },
   {
     id: 6,
-    img: course2,
+    img: category1,
     title: "Marketing & Business",
   },
   {
     id: 7,
-    img: course2,
+    img: category2,
     title: "Marketing & Business",
   },
 ];
@@ -153,5 +158,36 @@ export const reviews = [
     img: course2,
     name: "Julio",
     country: "Brasil",
+  },
+];
+
+export const dashboardLink = [
+  {
+    path: "",
+    icon: "",
+  },
+  {
+    path: "",
+    icon: "",
+  },
+  {
+    path: "",
+    icon: "",
+  },
+  {
+    path: "",
+    icon: "",
+  },
+  {
+    path: "",
+    icon: "",
+  },
+  {
+    path: "",
+    icon: "",
+  },
+  {
+    path: "",
+    icon: "",
   },
 ];

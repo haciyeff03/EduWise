@@ -18,8 +18,9 @@ const CategoriesSection = () => {
         {categories.slice(0, 6).map((category) => (
           <div key={category.id} className="rounded-[2px] content_ bg-white flex flex-col h-[144px] w-100 relative">
             <Link to={""}>
-              <div className="content-overlay"></div>
-              <img className="w-100  lg:h-[144px] h-[148px] object-cover content-image" src={category.img} />
+              <div className=" content-image">
+                <img className="w-100 lg:h-[144px] h-[148px] object-cover" src={category.img} alt="Category Image" />
+              </div>
               <div className="w-[123px] content-details">
                 <Link to={""} className="text-white lg:text-[24px] text-[14px]">
                   {category.title}
