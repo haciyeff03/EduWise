@@ -54,7 +54,7 @@ const RecommendedCourses = () => {
           <LuArrowRight color="#2C3E50" className="lg:block hidden" fontSize={24} />
         </Link>
       </div>
-      <div className="courses_container mt-[62px]">
+      <div className="mt-[62px]">
         <Slider {...settings}>
           {courses.map((course) => (
             <div key={course.id} className="rounded-[2px] bg-white flex flex-col">
