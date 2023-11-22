@@ -14,7 +14,8 @@ import ImgAndBtn from "./ImgAndBtn/ImgAndBtn";
 import CategoriesSection from "./CategoriesSection/CategoriesSection";
 import DashboardSidebar from "./dashboard-components/DashboardSidebar/DashboardSidebar";
 import DashboardContent from "./dashboard-components/DashboardContent/DashboardContent";
-import DashboardLayout from "./dashboard-components/DashboardLayout/DashboardLayout";
+import DashboardHeader from "./dashboard-components/DashboardHeader/DashboardHeader";
+import DashboardUserDropdown from "./dashboard-components/DashboardUserDropdown/DashboardUserDropdown";
 
 export {
   Header,
@@ -33,5 +34,6 @@ export {
   CategoriesSection,
   DashboardSidebar,
   DashboardContent,
-  DashboardLayout,
+  DashboardHeader,
+  DashboardUserDropdown,
 };

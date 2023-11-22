@@ -1,18 +1,16 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../../assets/images/edu-wise.svg";
 import { Link } from "react-router-dom";
+import { dashboardLink } from "../../../constants";
 
 const DashboardSidebar = () => {
   const pathname = useLocation().pathname;
   return (
-    <aside
-      className={`'fixed inset-y-0 left-0 bg-white w-full sm:w-20 xl:w-60 sm:flex flex-col z-10'
-      showSidebar ? 'flex' : 'hidden' `}
-    >
+    <aside className={`fixed inset-y-0 left-0 bg-white w-[15%] sm:flex flex-col z-10 px-[20px]`}>
       <nav>
-        <div className="logo pb-4 mb-4  mt-[29px] ml-[10px]">
-          <Link href="/">
+        <div className="logo px-[12px] mb-4 pb-[20px]  mt-[29px] ">
+          <Link to="/">
             <img
               src={logo}
               width={87}
@@ -25,42 +23,15 @@ const DashboardSidebar = () => {
             />
           </Link>
         </div>
-        <ul className="nav-wrapper flex flex-col gap-x-10">
-          <li>
-            <Link href="/" className={`${pathname === "/" ? "active-link" : ""} py-[12px] px-[16px] mb-[9px]`}>
-              <span>Dashboard</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/profile" className={`${pathname === "/profile" ? "active-link" : ""} py-[12px] px-[16px] mb-[9px]`}>
-              <span>Lessons</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/explore" className={`${pathname === "/explore" ? "active-link" : ""} py-[12px] px-[16px] mb-[9px]`}>
-              <span>Tasks</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="" className={`py-[12px] px-[16px] mb-[9px]`}>
-              <span>Schedule</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="" className="py-[12px] px-[16px] mb-[9px]">
-              <span>ChatGPT</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="" className="py-[12px] px-[16px] mb-[9px]">
-              <span>Messages</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="" className="py-[12px] px-[16px] mb-[9px]">
-              <span>Certifications</span>
-            </Link>
-          </li>
+        <ul className="nav-wrapper flex flex-col pl-[0px]">
+          {dashboardLink.map((link) => (
+            <li key={link.path}>
+              <Link to={link.path} className={`${pathname === link.path || link.path === "/dashboard" ? "active-link" : ""} p-[12px] mb-[9px]`}>
+                {link.icon}
+                <span>{link.name}</span>
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </aside>

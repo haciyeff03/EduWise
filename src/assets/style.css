@@ -103,6 +103,11 @@ nav ul {
     border-radius: 8px !important;
 }
 
+.dashboard_search .ant-input,
+.dashboard_search .ant-input-affix-wrapper {
+    background-color: white !important;
+}
+
 .ant-input {
     background-color: #F4F3F6;
 }
@@ -257,6 +262,20 @@ nav ul {
 .active-link {
     background-color: #F4F3F6;
     color: #5627FF !important;
+}
+
+.nav-wrapper li a {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: black;
+    transition: .2s ease-in-out;
+}
+
+.nav-wrapper li a:hover {
+    background-color: #F4F3F6;
+    color: #5627FF;
 }
 
 @media screen and (max-width:1024px) {

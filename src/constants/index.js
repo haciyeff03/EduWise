@@ -12,6 +12,14 @@ import category3 from "../assets/images/category3.svg";
 import category4 from "../assets/images/category4.svg";
 import category5 from "../assets/images/category5.svg";
 import category6 from "../assets/images/category6.svg";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { RiGraduationCapLine } from "react-icons/ri";
+import { MdOutlinePlayLesson } from "react-icons/md";
+import { SlNotebook } from "react-icons/sl";
+import { RxCalendar } from "react-icons/rx";
+import { IoCubeOutline } from "react-icons/io5";
+import { TbMessage } from "react-icons/tb";
+import { TbCertificate } from "react-icons/tb";
 
 export const courses = [
   {
@@ -163,31 +171,44 @@ export const reviews = [
 
 export const dashboardLink = [
   {
-    path: "",
-    icon: "",
+    name: "Dashboard",
+    headerName: "Overview",
+    path: "/dashboard/main-page",
+    icon: <LuLayoutDashboard />,
   },
   {
-    path: "",
-    icon: "",
+    name: "Lessons",
+    path: "/dashboard/lessons",
+    icon: <MdOutlinePlayLesson />,
   },
   {
-    path: "",
-    icon: "",
+    name: "Tasks",
+    path: "/dashboard/tasks",
+    icon: <RiGraduationCapLine />,
   },
   {
-    path: "",
-    icon: "",
+    name: "Notes",
+    path: "/dashboard/notes",
+    icon: <SlNotebook />,
   },
   {
-    path: "",
-    icon: "",
+    name: "Schedule",
+    path: "/dashboard/schedule",
+    icon: <RxCalendar />,
   },
   {
-    path: "",
-    icon: "",
+    name: "ChatGPT",
+    path: "/dashboard/chatgpt",
+    icon: <IoCubeOutline />,
   },
   {
-    path: "",
-    icon: "",
+    name: "Messages",
+    path: "/dashboard/messages",
+    icon: <TbMessage />,
+  },
+  {
+    name: "Certifications",
+    path: "/dashboard/certifications",
+    icon: <TbCertificate />,
   },
 ];

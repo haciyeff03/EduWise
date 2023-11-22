@@ -3,7 +3,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useLocation } from "react-router-dom";
 import { UserDashboard } from "../../pages";
-import DashboardLayout from "../dashboard-components/DashboardLayout/DashboardLayout";
 
 const Layout = ({ children }) => {
   const location = useLocation();
