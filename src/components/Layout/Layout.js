@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       {!location.pathname.startsWith("/dashboard") ? (
         <>
           <Header />
-          <main className={`${location.pathname === "/" ? "" : "pt-[140px]"} `}>{children}</main>
+          <main className={`${location.pathname === "/" ? "" : "lg:pt-[140px] pt-[85px] m_bg"}`}>{children}</main>
           <Footer />
         </>
       ) : (

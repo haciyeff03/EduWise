@@ -278,6 +278,12 @@ nav ul {
     color: #5627FF;
 }
 
+.courses_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px;
+}
+
 @media screen and (max-width:1024px) {
     .hero_buttons {
         justify-content: center;
@@ -301,7 +307,8 @@ nav ul {
 @media (max-width: 1420px) {
 
 
-    .professions_container {
+    .professions_container,
+    .courses_container {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -313,16 +320,86 @@ nav ul {
 
 @media (max-width: 1024px) {
 
-    .categories_container {
+    .categories_container,
+    .courses_container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 645px) {
+
+    .fm_heart {
+        top: 22px;
+    }
+
+    .m_bg {
+        background-color: #F4F3F6;
     }
 }
 
 @media (max-width: 645px) {
 
     .plan_pricing_container,
-    .reviews_container {
+    .reviews_container,
+    .courses_container {
         grid-template-columns: 1fr;
     }
 
+    .courses_mb {
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #F4F4F5;
+        border-radius: 0px;
+    }
+
+    .course_img {
+        width: 80%;
+        height: 75%;
+        object-fit: cover;
+    }
+
+    .fm_heart {
+        bottom: 5px;
+        width: 13px
+    }
+
+    .m_bg {
+        background-color: white;
+    }
+
+    .ds_04 {
+        display: flex;
+        gap: 15px;
+
+    }
+
+    .ds_04 button {
+        border-radius: 67px;
+        padding: 10px 12px;
+        border: 1px solid var(--neutral-400, #A1A1AA);
+        color: var(--neutral-400, #A1A1AA);
+    }
+
+    .btn__active {
+        background: var(--brand-c, #5627FF);
+        color: var(--00, #FFF) !important;
+    }
+
+}
+
+@media (min-width: 820px)and (max-width:1180px) {
+    .courses_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width:644px)and (max-width: 771px) {
+.ds_04{
+    display: none;
+}
+
+.mw_03{
+    width: 100%;
+}
 }
