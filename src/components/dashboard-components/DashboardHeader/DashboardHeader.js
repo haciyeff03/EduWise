@@ -4,7 +4,10 @@ import { dashboardLink } from "../../../constants";
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { FaRegBell } from "react-icons/fa";
+import { RxHamburgerMenu } from "react-icons/rx";
 import DashboardUserDropdown from "../DashboardUserDropdown/DashboardUserDropdown";
+import { useDispatch } from "react-redux";
+import { toggleSidebar } from "../../../redux/features/sidebar/sidebarSlice";
 
 const { Search } = Input;
 const suffix = (
@@ -19,6 +22,7 @@ const suffix = (
 const DashboardHeader = () => {
   const location = useLocation();
   const filteredLinks = dashboardLink.filter((link) => link.path !== "/dashboard/main-page");
+
   return (
     <div className="flex justify-between items-center">
       <div>
