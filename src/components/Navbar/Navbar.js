@@ -57,8 +57,9 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-[25px] w-[30%]">
         <SearchBar />
-        <button className="bg-[#564FFD] text-white rounded-[2px] px-[16px] py-[8px]">Daxil ol</button>
-      </div>
+        <Link to="/login"  className="bg-[#564FFD] text-white rounded-[2px] px-[16px] py-[8px]">Daxil ol
+        </Link>     
+         </div>
     </header>
   );
 };
